@@ -1,0 +1,15 @@
+1. Demo   : Main update OK, IR 전원 껐다가 키면 펌웨어 업데이트 됨. 
+
+2. Demo2 : Main, IR update OK (Nandflash 512 r/w)
+
+3. Demo3 : Main, IR update OK (Nandflash 1024 r/w), ir sensor boot 진입을 위한 main 과 ir sync 수정
+
+4. Demo3_MainBoot : final 버전에서 포팅..
+
+5. Demo4 : Main final 버전으로 포팅..  All 프로젝트 final version -> 컨펌 후 피드백 (수정사항 수신)
+
+6. Demo5 : App 복잡하다는 피드백 (Modbus 커맨드 조합이 아님)
+
+7. Demo6 : *** final version *****
+
+8. Remote_FW_update : 소장님께 공유한 버전

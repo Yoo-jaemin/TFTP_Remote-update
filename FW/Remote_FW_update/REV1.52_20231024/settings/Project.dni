@@ -1,0 +1,93 @@
+[InterruptLog]
+LogEnabled=0
+GraphEnabled=0
+ShowTimeLog=1
+SumEnabled=0
+ShowTimeSum=1
+SumSortOrder=0
+[DataLog]
+LogEnabled=0
+GraphEnabled=0
+ShowTimeLog=1
+SumEnabled=0
+ShowTimeSum=1
+[Stack]
+FillEnabled=0
+OverflowWarningsEnabled=1
+WarningThreshold=90
+SpWarningsEnabled=1
+WarnLogOnly=1
+UseTrigger=1
+TriggerName=main
+LimitSize=0
+ByteLimit=50
+[Interrupts]
+Enabled=1
+[MemConfig]
+Base=1
+Manual=0
+Ddf=1
+TypeViol=0
+Stop=1
+[Trace1]
+Enabled=0
+ShowSource=1
+[Simulator]
+Freq=10000000
+MultiCoreRunAll=1
+[StLinkDriver]
+CStepIntDis=_ 0
+stlinkserialNo=E53EE0B0
+stlinkfoundProbes=E53EE0B0:FFFFFFFF:
+[DebugChecksum]
+Checksum=-1175206073
+[Exceptions]
+StopOnUncaught=_ 0
+StopOnThrow=_ 0
+[CallStack]
+ShowArgs=0
+[Disassembly]
+MixedMode=1
+[struct_types]
+Fmt0=EEPROM_HandleType-UpdateHp	3	0
+Fmt1=EEPROM_HandleType-UpdateTp	3	0
+Fmt2=IR_ProcessType-FifoHp	3	0
+Fmt3=IR_ProcessType-FifoTp	3	0
+Fmt4=IR_ProcessType-ModbusWaveOutputChannel	3	0
+Fmt5=SystemErrorType-Word	4	0
+[array_types]
+Fmt0=U16[2]	3	0
+Fmt1=U16[320]	3	0
+Fmt2=U8[180]	3	0
+Fmt3=U8[255]	4	0
+Fmt4=U8[2]	4	0
+Fmt5=U8[4]	3	0
+Fmt6=U8[50]	4	0
+Fmt7=uint8_t[2]	4	0
+[watch_formats]
+Fmt0={W}42:ADC1_ConversionCompleted	3	0
+Fmt1={W}42:Modbus_TimeoutFlag	3	0
+Fmt2={W}42:USART3_RxFifoHp	3	0
+Fmt3={W}42:USART3_RxFifoTp	3	0
+Fmt4={W}42:iADC1_ConversionComplete	3	0
+Fmt5={W}42:iADC1_Sequence	3	0
+[TermIOLog]
+LoggingEnabled=_ 0
+LogFile=_ ""
+[CallStackLog]
+Enabled=0
+[CallStackStripe]
+ShowTiming=0
+[Log file]
+LoggingEnabled=_ 0
+LogFile=_ ""
+Category=_ 0
+[Disassemble mode]
+mode=0
+[Breakpoints2]
+Count=0
+[Aliases]
+A0=_ "E:\Project\GasDetector\OpticalCavityType\GSA-970\FW\REV0.6_20181208\Base\main.c" ""
+A1=_ "E:\Project\GasDetector\OpticalCavityType\GSA-970\FW\REV0.6_20181208\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_tim.c" ""
+Count=2
+SuppressDialog=0

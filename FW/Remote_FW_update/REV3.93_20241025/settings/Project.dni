@@ -1,0 +1,227 @@
+[Stack]
+FillEnabled=0
+OverflowWarningsEnabled=1
+WarningThreshold=90
+SpWarningsEnabled=1
+WarnLogOnly=1
+UseTrigger=1
+TriggerName=main
+LimitSize=0
+ByteLimit=50
+[StLinkDriver]
+stlinkserialNo=7035F410
+stlinkfoundProbes=7035F410:E53EE0B0:
+CStepIntDis=_ 0
+[DebugChecksum]
+Checksum=-684326072
+[Exceptions]
+StopOnUncaught=_ 0
+StopOnThrow=_ 0
+[CallStack]
+ShowArgs=0
+[Disassembly]
+MixedMode=1
+[InterruptLog]
+LogEnabled=0
+GraphEnabled=0
+ShowTimeLog=1
+SumEnabled=0
+ShowTimeSum=1
+SumSortOrder=0
+[DataLog]
+LogEnabled=0
+GraphEnabled=0
+ShowTimeLog=1
+SumEnabled=0
+ShowTimeSum=1
+[Interrupts]
+Enabled=1
+[MemConfig]
+Base=1
+Manual=0
+Ddf=1
+TypeViol=0
+Stop=1
+[Trace1]
+Enabled=0
+ShowSource=1
+[Simulator]
+Freq=10000000
+MultiCoreRunAll=1
+[SfrWindow]
+Show=1 1
+Sort=4 0
+[struct_types]
+Fmt0=ADC_TypeDef-CR1	4	0
+Fmt1=ADC_TypeDef-CR2	4	0
+Fmt2=ADC_TypeDef-HTR	4	0
+Fmt3=ADC_TypeDef-LTR	4	0
+Fmt4=ADC_TypeDef-SMPR1	4	0
+Fmt5=ADC_TypeDef-SMPR2	4	0
+Fmt6=ADC_TypeDef-SQR1	4	0
+Fmt7=ADC_TypeDef-SQR2	4	0
+Fmt8=ADC_TypeDef-SQR3	4	0
+Fmt9=ADC_TypeDef-SR	4	0
+Fmt10=AllBase_HandleType-TaskEvt	3	0
+Fmt11=BQ2579x_ADCs_Ctrl-Byte	4	0
+Fmt12=BQ2579x_Temp_Ctrl-Byte	4	0
+Fmt13=CavityErrorType-Word	4	0
+Fmt14=Cavity_HandleType-AmpCalErrFlag	4	0
+Fmt15=Cavity_HandleType-AmpCalRunFlag	4	0
+Fmt16=Cavity_HandleType-IsPresent	3	0
+Fmt17=EEPROM_HandleType-UpdateHp	3	0
+Fmt18=EEPROM_HandleType-UpdateTp	3	0
+Fmt19=FactoryCal_Type-Tick	4	0
+Fmt20=Func_HandleType-Level	3	0
+Fmt21=Func_HandleType-QuitSec	3	0
+Fmt22=Func_HandleType-QuitTmr	4	0
+Fmt23=Func_HandleType-ViewBlk	3	0
+Fmt24=Func_HandleType-ViewEvt	3	0
+Fmt25=Func_HandleType-ViewTmr	4	0
+Fmt26=Func_ItemType-Lv1	3	0
+Fmt27=Func_ItemType-Lv2	3	0
+Fmt28=Func_ItemType-Lv3	3	0
+Fmt29=Func_ItemType-Lv4	3	0
+Fmt30=Func_ItemType-Lv5	3	0
+Fmt31=GDI_ColorType-ORANGERED	4	0
+Fmt32=GDI_ColorType-RED	4	0
+Fmt33=GDI_ColorType-SELECTED	4	0
+Fmt34=GDI_ColorType-SPRINGGREEN	4	0
+Fmt35=GPIO_InitTypeDef-Pin	4	0
+Fmt36=GPIO_TypeDef-IDR	4	0
+Fmt37=GPIO_TypeDef-ODR	4	0
+Fmt38=I2C_HandleTypeDef-XferOptions	4	0
+Fmt39=I2C_TypeDef-CCR	4	0
+Fmt40=I2C_TypeDef-CR1	4	0
+Fmt41=I2C_TypeDef-CR2	4	0
+Fmt42=I2C_TypeDef-DR	3	0
+Fmt43=I2C_TypeDef-OAR1	4	0
+Fmt44=I2C_TypeDef-OAR2	4	0
+Fmt45=I2C_TypeDef-SR1	4	0
+Fmt46=I2C_TypeDef-SR2	4	0
+Fmt47=I2C_TypeDef-TRISE	4	0
+Fmt48=KEY_ScanPort-Byte	4	0
+Fmt49=LCD_DriveType-BrightnessLevel	3	0
+Fmt50=MCP46x1_WiperType-Word	3	0
+Fmt51=Measuring_AlarmInfo-IsUnderCheckEnabled	3	0
+Fmt52=Measuring_AlarmInfo-_1stLatchEnabled	3	0
+Fmt53=Measuring_AlarmInfo-_1stTypeIncrease	3	0
+Fmt54=Measuring_AlarmInfo-_2ndLatchEnabled	3	0
+Fmt55=Measuring_AlarmInfo-_2ndTypeIncrease	3	0
+Fmt56=Measuring_ConfType-OutMax	3	0
+Fmt57=Measuring_FilterItem-Word	4	0
+Fmt58=Measuring_GasInfo-Msd	3	0
+Fmt59=Measuring_HandleType-LpfIndex	3	0
+Fmt60=Modbus_Bit_Type-Byte	4	0
+Fmt61=NAND_IDTypeDef-Device_Id	4	0
+Fmt62=NAND_IDTypeDef-Fourth_Id	4	0
+Fmt63=NAND_IDTypeDef-Maker_Id	4	0
+Fmt64=NAND_IDTypeDef-Third_Id	4	0
+Fmt65=Power_CtrlType-BatLevel	3	0
+Fmt66=Power_CtrlType-BatScanTmr	3	0
+Fmt67=RS485_HandleType-RxFifoHp	3	0
+Fmt68=RS485_HandleType-RxFifoTp	3	0
+Fmt69=RTC_DateTypeDef-Date	3	0
+Fmt70=RTC_DateTypeDef-Month	3	0
+Fmt71=RTC_DateTypeDef-WeekDay	3	0
+Fmt72=RTC_DateTypeDef-Year	3	0
+Fmt73=RTC_TimeTypeDef-Hours	3	0
+Fmt74=RTC_TimeTypeDef-Minutes	3	0
+Fmt75=RTC_TimeTypeDef-Seconds	3	0
+Fmt76=RTC_TimeTypeDef-SubSeconds	3	0
+Fmt77=RTC_TimeTypeDef-TimeFormat	3	0
+Fmt78=RTC_TypeDef-DR	4	0
+Fmt79=RTC_TypeDef-TR	4	0
+Fmt80=Relay_BlinkType-Word	4	0
+Fmt81=Relay_DriveItem-Out	3	0
+Fmt82=Relay_DriveItem-Set	3	0
+Fmt83=SelfTest_HandleType-Timeout	3	0
+Fmt84=System_Error_Main-Word	4	0
+Fmt85=System_SetType-sBrightness	3	0
+Fmt86=USART_TypeDef-CR1	4	0
+Fmt87=USART_TypeDef-SR	4	0
+Fmt88=ip_addr_t-addr	4	0
+Fmt89=struct __DMA_HandleTypeDef-ErrorCode	4	0
+Fmt90=struct __DMA_HandleTypeDef-StreamBaseAddress	4	0
+Fmt91=struct __DMA_HandleTypeDef-StreamIndex	4	0
+Fmt92=struct netif-flags	4	0
+Fmt93=uSD_ScanType-IsPresent	3	0
+Fmt94=usword-w	3	0
+Fmt95=uulong-l	4	0
+Fmt96=vMeasuring_ColorType-Back	4	0
+Fmt97=vMessageBoxType-TboxColor	3	0
+Fmt98=vMessageType-PrvLen	3	0
+Fmt99=vStatusBar_Type-FlowTmr	3	0
+Fmt100=vStatusBar_Type-InfoTmr	3	0
+[array_types]
+Fmt0=U16[100]	4	0
+Fmt1=U16[11]	4	0
+Fmt2=U16[192]	3	0
+Fmt3=U16[2]	3	0
+Fmt4=U16[32]	3	0
+Fmt5=U16[3]	3	0
+Fmt6=U16[4]	3	0
+Fmt7=U16[64]	3	0
+Fmt8=U16[6]	3	0
+Fmt9=U16[95]	4	0
+Fmt10=U16[99]	3	0
+Fmt11=U16[9]	3	0
+Fmt12=U8[11]	4	0
+Fmt13=U8[180]	3	0
+Fmt14=U8[255]	3	0
+Fmt15=U8[256]	3	0
+Fmt16=U8[2]	3	0
+Fmt17=U8[32]	3	0
+Fmt18=U8[46]	4	0
+Fmt19=U8[4]	3	0
+Fmt20=U8[5]	4	0
+Fmt21=U8[6]	4	0
+Fmt22=U8[73]	4	0
+Fmt23=U8[8]	3	0
+Fmt24=U8[90]	3	0
+Fmt25=bool[4]	3	0
+Fmt26=bool[5]	3	0
+Fmt27=u8_t[6]	4	0
+Fmt28=uint16_t[32]	4	0
+Fmt29=uint16_t[4]	4	0
+Fmt30=uint32_t[2]	4	0
+Fmt31=uint8_t[1524]	4	0
+Fmt32=uint8_t[16]	5	0
+Fmt33=uint8_t[256]	4	0
+Fmt34=uint8_t[2]	3	0
+Fmt35=uint8_t[4]	4	0
+Fmt36=uint8_t[6]	4	0
+[watch_formats]
+Fmt0={W}42:0x20010a40	4	0
+Fmt1={W}42:CalStatus	3	0
+Fmt2={W}42:Len	3	0
+Fmt3={W}42:Modbus_MasterHandleAddress	3	0
+Fmt4={W}42:StableTime	3	0
+Fmt5={W}42:TagColor	4	0
+Fmt6={W}42:aa	4	0
+Fmt7={W}42:bb	4	0
+Fmt8={W}42:failcount	3	0
+Fmt9={W}42:pFullOs	3	0
+Fmt10={W}42:vPumpAniTime	3	0
+[Log file]
+LoggingEnabled=_ 0
+LogFile=_ ""
+Category=_ 0
+[TermIOLog]
+LoggingEnabled=_ 0
+LogFile=_ ""
+[CallStackLog]
+Enabled=0
+[CallStackStripe]
+ShowTiming=0
+[Disassemble mode]
+mode=0
+[Breakpoints2]
+Count=0
+[Aliases]
+A0=_ "E:\Project\GasDetector\OpticalCavityType\GTD-5100F\FW\REV2.60_20190920\Base\main.c" ""
+A1=_ "E:\Project\GasDetector\OpticalCavityType\GTD-5100F\FW\REV2.60_20190920\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_uart.c" ""
+A2=_ "E:\Project\GasDetector\OpticalCavityType\GTD-5100F\FW\REV2.80_20190109\Base\main.c" ""
+A3=_ "E:\Project\GasDetector\OpticalCavityType\GTD-5100F\FW\REV2.80_20190109\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_uart.c" ""
+Count=4
+SuppressDialog=0

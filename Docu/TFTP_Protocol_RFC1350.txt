@@ -1,0 +1,126 @@
+
+1. Purpose
+
+TFTP는 파일을 전송하는 간단한 프로토콜이므로 Trivial File Transfer Protocol 또는 TFTP라고 명명되었습니다.
+인터넷 사용자 데이터그램 프로토콜(UDP 또는 데이터그램) 위에 구현되었으므로 
+UDP를 구현하는 다른 네트워크의 머신 간에 파일을 이동하는 데 사용할 수 있습니다. 할 수 있는 일은 원격 서버에서 파일(또는 메일)을 읽고 쓰는 것뿐입니다.
+
+
+2. Overview of the Protocol
+
+모든 전송은 파일을 읽거나 쓰라는 요청으로 시작하는데, 이는 연결을 요청하는 역할도 합니다.
+각 데이터 패킷에는 데이터 블록 하나가 포함되어 있으며 다음 패킷을 보내기 전에 확인 패킷으로 확인되어야 합니다.
+512바이트 미만의 데이터 패킷은 전송 종료를 알립니다.
+하나는 데이터를 보내고 확인을 받고, 다른 하나는 확인을 보내고 데이터를 받습니다.
+
+
+3. Relation to other Protocols
+
+데이터그램은 인터넷 프로토콜에서 구현되므로 패킷에는 인터넷 헤더, 데이터그램 헤더, TFTP 헤더가 있습니다.
+(TFTP 헤더에 지정된 패킷 유형에 따라 데이터일 수도 있고 아닐 수도 있습니다.)
+TFTP 헤더는 패킷의 유형(예: DATA, ERROR 등)을 나타내는 2바이트 opcode 필드로 구성됩니다.
+
+   ---------------------------------------------------
+  |  Local Medium  |  Internet  |  Datagram  |  TFTP  |
+   ---------------------------------------------------
+
+             Figure 3-1: Order of Headers
+			 
+			 
+4. Initial Connection Protocol
+
+전송은 요청(외부 파일 시스템에 쓰기 위한 WRQ 또는 읽기 위한 RRQ)을 보내고 긍정적인 응답, 쓰기에 대한 확인 패킷 또는 읽기에 대한 첫 번째 데이터 패킷을 수신하여 설정됩니다.
+일반적으로 확인 패킷에는 확인되는 데이터 패킷의 블록 번호가 포함됩니다.
+각 데이터 패킷에는 블록 번호가 연관되어 있으며 블록 번호는 연속적이며 1부터 시작합니다.
+(일반적으로 확인 패킷은 데이터 패킷을 확인하므로 확인 패킷에는 확인되는 데이터 패킷의 블록 번호가 포함됩니다.)
+
+ex)
+1. 호스트 A가 호스트 B에 "WRQ"를 전송합니다. 소스는 A의 TID이고 목적지는 69입니다.
+2. 호스트 B가 호스트 A에 "ACK"(블록 번호는 0)를 전송합니다. 소스는 B의 TID이고 목적지는 A의 TID입니다.
+
+
+5. TFTP Packets
+
+데이터는 실제로 그림 5-2에 나와 있는 DATA 패킷으로 전송됩니다.
+DATA 패킷(opcode = 3)에는 블록 번호와 데이터 필드가 있습니다.
+데이터 패킷의 블록 번호는 1부터 시작하여 새 데이터 블록마다 1씩 증가합니다.
+
+[Opcode  operation]
+	1     Read request (RRQ)
+	2     Write request (WRQ)
+	3     Data (DATA)
+	4     Acknowledgment (ACK)
+	5     Error (ERROR)
+	
+	
+		 2 bytes     string    1 byte     string   1 byte
+		 ------------------------------------------------
+		| Opcode |  Filename  |   0  |    Mode    |   0  |
+		 ------------------------------------------------
+
+					Figure 5-1: RRQ/WRQ packet	
+
+
+				 2 bytes     2 bytes      n bytes
+				 ----------------------------------
+				| Opcode |   Block #  |   Data     |
+				 ----------------------------------
+
+					   Figure 5-2: DATA packet			
+	   
+					   
+					   2 bytes     2 bytes
+					  ---------------------
+					 | Opcode |   Block #  |
+					  ---------------------
+					   
+					  Figure 5-3: ACK packet	   
+					   
+ 
+ 
+               2 bytes     2 bytes      string    1 byte
+               -----------------------------------------
+              | Opcode |  ErrorCode |   ErrMsg   |   0  |
+               -----------------------------------------
+
+                       Figure 5-4: ERROR packet
+					   
+
+================================================================================
+ex)
+
+  Order of Headers
+
+                                                  2 bytes
+    ----------------------------------------------------------
+   |  Local Medium  |  Internet  |  Datagram  |  TFTP Opcode  |
+    ----------------------------------------------------------
+
+TFTP Formats
+
+   Type   Op #     Format without header
+
+          2 bytes    string   1 byte     string   1 byte
+          -----------------------------------------------
+   RRQ/  | 01/02 |  Filename  |   0  |    Mode    |   0  |
+   WRQ    -----------------------------------------------
+          2 bytes    2 bytes       n bytes
+          ---------------------------------
+   DATA  | 03    |   Block #  |    Data    |
+          ---------------------------------
+          2 bytes    2 bytes
+          -------------------
+   ACK   | 04    |   Block #  |
+          --------------------
+          2 bytes  2 bytes        string    1 byte
+          ----------------------------------------
+   ERROR | 05    |  ErrorCode |   ErrMsg   |   0  |
+          ----------------------------------------
+
+Initial Connection Protocol for reading a file
+
+   1. Host  A  sends  a  "RRQ"  to  host  B  with  source= A's TID,
+      destination= 69.
+
+   2. Host B sends a "DATA" (with block number= 1) to host  A  with
+      source= B's TID, destination= A's TID.

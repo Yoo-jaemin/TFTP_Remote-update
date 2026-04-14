@@ -1,0 +1,58 @@
+[ IR 센서 추가]
+cavity.h
+	CAVITY_SEN_TYPE_L??_2??_X0??
+	
+snesor_list.h
+	IR_SEN_??_??? (신규 필터가 있을 경우)
+	
+cavity.c
+	void Cavity_Eep_Init_Packet_Send( MODBUS_MasterHandleType *pModbus, U8 Block )
+	
+vfunc_factory.c
+	pCvtSenName
+
+
+[ IR 가스 추가 - 간섭필터링 ]
+
+ir_gas_list.h
+model_list.h
+
+modbus_map.c
+	static U8 GasNo_Search( Measuring_GasInfo *pInf )
+	
+measuring.c
+	static bool Channel_Config_Load_Cavity( Measuring_ConfType *pConf )
+	static void IR_Calculation_Paramter_Load( Measuring_GasInfo *pInf )
+	static void Measuring_Filter_Cvt( Measuring_FilterItem *pf ) => Dual Sensor 추가 시
+	static void Default_Gas_Info_Load_Cavity( Measuring_GasInfo *pGas, Measuring_AlarmInfo *pAlr )
+	static void Interference_Gas_Filtering( Measuring_FilterItem *pFilter )
+	void Measuring_Default_Gas_Name_Load( Measuring_GasInfo *pInf )
+
+func_factory.c
+	static FactoryCal_Limit FactoryCal_Limit_Load( Measuring_GasInfo *pInf )
+
+[ CT 센서 추가 ]
+snesor_list.h
+	
+vfunc_factory.c
+	pCtgSenName, pCtgCfgName
+	
+
+
+[ CT 가스 추가 ]
+
+ct_gas_list.h
+model_list.h
+
+modbus_map.c
+	static U8 GasNo_Search( Measuring_GasInfo *pInf )
+	
+measuring.c
+	static bool Channel_Config_Load_Cartridge( Measuring_ConfType *pConf )
+	static void Default_Gas_Info_Load_Cartridge( Measuring_GasInfo *pGas, Measuring_AlarmInfo *pAlr )
+	void Measuring_Default_Gas_Name_Load( Measuring_GasInfo *pInf )
+	
+func_factory.c
+	static FactoryCal_Limit FactoryCal_Limit_Load( Measuring_GasInfo *pInf )
+
+

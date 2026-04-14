@@ -1,0 +1,788 @@
+###############################################################################
+#
+# IAR ELF Linker V8.32.1.169/W32 for ARM                  04/Apr/2025  17:14:33
+# Copyright 2007-2018 IAR Systems AB.
+#
+#    Output file  =  
+#        D:\2_Projects\3_MyProjects\FW_Update_TFTP\FW\Remote_FW_update\REV0.18_20240710\Debug\Exe\GTD-5x00(F)N_Cartridge.out
+#    Map file     =  
+#        D:\2_Projects\3_MyProjects\FW_Update_TFTP\FW\Remote_FW_update\REV0.18_20240710\Debug\List\GTD-5x00(F)N_Cartridge.map
+#    Command line =  
+#        -f C:\Users\JASAN1~1\AppData\Local\Temp\EW43FE.tmp
+#        (D:\2_Projects\3_MyProjects\FW_Update_TFTP\FW\Remote_FW_update\REV0.18_20240710\Debug\Obj\adc.o
+#        D:\2_Projects\3_MyProjects\FW_Update_TFTP\FW\Remote_FW_update\REV0.18_20240710\Debug\Obj\AfeAdcLib.o
+#        D:\2_Projects\3_MyProjects\FW_Update_TFTP\FW\Remote_FW_update\REV0.18_20240710\Debug\Obj\AfeDacLib.o
+#        D:\2_Projects\3_MyProjects\FW_Update_TFTP\FW\Remote_FW_update\REV0.18_20240710\Debug\Obj\AfeTiaLib.o
+#        D:\2_Projects\3_MyProjects\FW_Update_TFTP\FW\Remote_FW_update\REV0.18_20240710\Debug\Obj\AfeWdtLib.o
+#        D:\2_Projects\3_MyProjects\FW_Update_TFTP\FW\Remote_FW_update\REV0.18_20240710\Debug\Obj\ClkLib.o
+#        D:\2_Projects\3_MyProjects\FW_Update_TFTP\FW\Remote_FW_update\REV0.18_20240710\Debug\Obj\crc16.o
+#        D:\2_Projects\3_MyProjects\FW_Update_TFTP\FW\Remote_FW_update\REV0.18_20240710\Debug\Obj\dac.o
+#        D:\2_Projects\3_MyProjects\FW_Update_TFTP\FW\Remote_FW_update\REV0.18_20240710\Debug\Obj\DioLib.o
+#        D:\2_Projects\3_MyProjects\FW_Update_TFTP\FW\Remote_FW_update\REV0.18_20240710\Debug\Obj\DmaLib.o
+#        D:\2_Projects\3_MyProjects\FW_Update_TFTP\FW\Remote_FW_update\REV0.18_20240710\Debug\Obj\FeeLib.o
+#        D:\2_Projects\3_MyProjects\FW_Update_TFTP\FW\Remote_FW_update\REV0.18_20240710\Debug\Obj\flash.o
+#        D:\2_Projects\3_MyProjects\FW_Update_TFTP\FW\Remote_FW_update\REV0.18_20240710\Debug\Obj\gpt.o
+#        D:\2_Projects\3_MyProjects\FW_Update_TFTP\FW\Remote_FW_update\REV0.18_20240710\Debug\Obj\GptLib.o
+#        D:\2_Projects\3_MyProjects\FW_Update_TFTP\FW\Remote_FW_update\REV0.18_20240710\Debug\Obj\hs300x.o
+#        D:\2_Projects\3_MyProjects\FW_Update_TFTP\FW\Remote_FW_update\REV0.18_20240710\Debug\Obj\i2c.o
+#        D:\2_Projects\3_MyProjects\FW_Update_TFTP\FW\Remote_FW_update\REV0.18_20240710\Debug\Obj\I2cLib.o
+#        D:\2_Projects\3_MyProjects\FW_Update_TFTP\FW\Remote_FW_update\REV0.18_20240710\Debug\Obj\led.o
+#        D:\2_Projects\3_MyProjects\FW_Update_TFTP\FW\Remote_FW_update\REV0.18_20240710\Debug\Obj\main.o
+#        D:\2_Projects\3_MyProjects\FW_Update_TFTP\FW\Remote_FW_update\REV0.18_20240710\Debug\Obj\measuring.o
+#        D:\2_Projects\3_MyProjects\FW_Update_TFTP\FW\Remote_FW_update\REV0.18_20240710\Debug\Obj\modbus.o
+#        D:\2_Projects\3_MyProjects\FW_Update_TFTP\FW\Remote_FW_update\REV0.18_20240710\Debug\Obj\modbus_map.o
+#        D:\2_Projects\3_MyProjects\FW_Update_TFTP\FW\Remote_FW_update\REV0.18_20240710\Debug\Obj\modbus_rtu_slave.o
+#        D:\2_Projects\3_MyProjects\FW_Update_TFTP\FW\Remote_FW_update\REV0.18_20240710\Debug\Obj\option.o
+#        D:\2_Projects\3_MyProjects\FW_Update_TFTP\FW\Remote_FW_update\REV0.18_20240710\Debug\Obj\PwrLib.o
+#        D:\2_Projects\3_MyProjects\FW_Update_TFTP\FW\Remote_FW_update\REV0.18_20240710\Debug\Obj\RstLib.o
+#        D:\2_Projects\3_MyProjects\FW_Update_TFTP\FW\Remote_FW_update\REV0.18_20240710\Debug\Obj\sensing_process.o
+#        D:\2_Projects\3_MyProjects\FW_Update_TFTP\FW\Remote_FW_update\REV0.18_20240710\Debug\Obj\startup_ADuCM355.o
+#        D:\2_Projects\3_MyProjects\FW_Update_TFTP\FW\Remote_FW_update\REV0.18_20240710\Debug\Obj\system_ADuCM355.o
+#        D:\2_Projects\3_MyProjects\FW_Update_TFTP\FW\Remote_FW_update\REV0.18_20240710\Debug\Obj\tia.o
+#        D:\2_Projects\3_MyProjects\FW_Update_TFTP\FW\Remote_FW_update\REV0.18_20240710\Debug\Obj\uart.o
+#        D:\2_Projects\3_MyProjects\FW_Update_TFTP\FW\Remote_FW_update\REV0.18_20240710\Debug\Obj\UrtLib.o
+#        D:\2_Projects\3_MyProjects\FW_Update_TFTP\FW\Remote_FW_update\REV0.18_20240710\Debug\Obj\version.o
+#        D:\2_Projects\3_MyProjects\FW_Update_TFTP\FW\Remote_FW_update\REV0.18_20240710\Debug\Obj\wdt.o
+#        --redirect _Printf=_PrintfFull --redirect _Scanf=_ScanfFull
+#        --no_out_extension -o
+#        "D:\2_Projects\3_MyProjects\FW_Update_TFTP\FW\Remote_FW_update\REV0.18_20240710\Debug\Exe\GTD-5x00(F)N_Cartridge.out"
+#        --map
+#        "D:\2_Projects\3_MyProjects\FW_Update_TFTP\FW\Remote_FW_update\REV0.18_20240710\Debug\List\GTD-5x00(F)N_Cartridge.map"
+#        --config
+#        D:\2_Projects\3_MyProjects\FW_Update_TFTP\FW\Remote_FW_update\REV0.18_20240710\Base\ADuCM355.icf
+#        --semihosting --entry __iar_program_start --vfe --text_out locale)
+#
+###############################################################################
+
+*******************************************************************************
+*** RUNTIME MODEL ATTRIBUTES
+***
+
+CppFlavor       = *
+__SystemLibrary = DLib
+__dlib_version  = 6
+
+
+*******************************************************************************
+*** HEAP SELECTION
+***
+
+The basic heap was selected because no calls to memory allocation
+functions were found in the application outside of system library
+functions, and there are calls to deallocation functions in the
+application.
+
+
+*******************************************************************************
+*** PLACEMENT SUMMARY
+***
+
+"A0":  place at 0x8180 { ro section ReadProtectedKeyHash };
+"A1":  place at 0x8190 { ro section CRC_ReadProtectedKeyHash };
+"A2":  place at 0x8194 { ro section NumCRCPages };
+define block CHECKSUM with size = 4, alignment = 4 { ro section .checksum };
+"A3":  place at 0x7fc { block CHECKSUM };
+"A4":  place at start of [from 0x8000 to 0x817f] { ro section .intvec };
+"P2":  place in [from 0x8800 to 0x1'ffff] { ro };
+define block CSTACK with size = 1K, alignment = 8 { };
+"A5":  place at end of [from 0x2000'0000 to 0x2000'1fff] { block CSTACK };
+define block HEAP with size = 512, alignment = 8 { };
+"P3":  place in [from 0x2000'0000 to 0x2000'1fff] { rw, block HEAP };
+"P6":  place in [from 0x2004'0000 to 0x2004'7fff] {
+          rw section never_retained_ram };
+initialize by copy { rw };
+
+No sections matched the following patterns:
+
+  ro section .checksum           in block CHECKSUM
+  ro section Page0_region        in "P1"
+  rw section bank1_retained_ram  in "P5"
+  section ISRAM_REGION           in "P4"
+
+
+  Section                 Kind         Address    Size  Object
+  -------                 ----         -------    ----  ------
+"A3":                                              0x4
+  CHECKSUM                               0x7fc     0x4  <Block>
+    CHECKSUM              uninit         0x7fc     0x4  <Block tail>
+                                       - 0x800     0x4
+
+"A4":                                            0x140
+  .intvec                 const         0x8000   0x140  startup_ADuCM355.o [1]
+                                      - 0x8140   0x140
+
+"A0":                                             0x10
+  ReadProtectedKeyHash    const         0x8180    0x10  startup_ADuCM355.o [1]
+                                      - 0x8190    0x10
+
+"A1":                                              0x4
+  CRC_ReadProtectedKeyHash
+                          const         0x8190     0x4  startup_ADuCM355.o [1]
+                                      - 0x8194     0x4
+
+"A2":                                              0x4
+  NumCRCPages             const         0x8194     0x4  startup_ADuCM355.o [1]
+                                      - 0x8198     0x4
+
+"P2":                                           0x6510
+  .text                   ro code       0x8800   0xf46  xprintffull.o [2]
+  .text                   ro code       0x9746    0x7a  lz77_init_single.o [4]
+  .text                   ro code       0x97c0    0x78  xlocale_c.o [2]
+  .text                   ro code       0x9838    0x16  strchr.o [4]
+  .text                   ro code       0x984e    0x3a  zero_init3.o [4]
+  .text                   ro code       0x9888    0x40  xfail_s.o [2]
+  .text                   ro code       0x98c8    0x36  strlen.o [4]
+  .text                   ro code       0x98fe    0x1e  xencoding_8859_1.o [2]
+  .text                   ro code       0x991c    0x58  memchr.o [4]
+  .text                   ro code       0x9974     0xa  xmbcurmax.o [2]
+  .text                   ro code       0x997e     0x2  startup_ADuCM355.o [1]
+  .text                   ro code       0x9980    0x76  ABImemcpy_unaligned.o [4]
+  .text                   ro code       0x99f6     0x2  startup_ADuCM355.o [1]
+  .text                   ro code       0x99f8   0x230  I64DivMod.o [4]
+  .text                   ro code       0x9c28   0x1a2  DblMul.o [3]
+  .text                   ro code       0x9dca     0x2  startup_ADuCM355.o [1]
+  .text                   ro code       0x9dcc    0x70  frexp.o [3]
+  .text                   ro code       0x9e3c    0x2e  DblCmpLe.o [3]
+  .text                   ro code       0x9e6a     0x2  startup_ADuCM355.o [1]
+  .text                   ro code       0x9e6c    0x2e  DblCmpGe.o [3]
+  .text                   ro code       0x9e9a     0x2  startup_ADuCM355.o [1]
+  .text                   ro code       0x9e9c   0x13a  ldexp.o [3]
+  .text                   ro code       0x9fd6     0x2  startup_ADuCM355.o [1]
+  .text                   ro code       0x9fd8    0x3a  DblToS32.o [3]
+  .text                   ro code       0xa012     0x2  startup_ADuCM355.o [1]
+  .text                   ro code       0xa014    0x22  S32ToDbl.o [3]
+  .text                   ro code       0xa036     0x2  startup_ADuCM355.o [1]
+  .text                   ro code       0xa038    0xe2  DblSub.o [3]
+  .text                   ro code       0xa11a     0x2  startup_ADuCM355.o [1]
+  .text                   ro code       0xa11c   0x246  DblDiv.o [3]
+  .text                   ro code       0xa362     0x2  startup_ADuCM355.o [1]
+  .text                   ro code       0xa364    0x28  DblToU32.o [3]
+  .text                   ro code       0xa38c    0x1a  U32ToDbl.o [3]
+  .text                   ro code       0xa3a6     0x6  abort.o [2]
+  .text                   ro code       0xa3ac     0x2  I64DivZer.o [4]
+  .text                   ro code       0xa3ae     0x2  startup_ADuCM355.o [1]
+  .text                   ro code       0xa3b0   0x17a  DblAdd.o [3]
+  .text                   ro code       0xa52a     0x2  startup_ADuCM355.o [1]
+  .text                   ro code       0xa52c    0x14  exit.o [5]
+  .text                   ro code       0xa540   0xc30  modbus_rtu_slave.o [1]
+  .text                   ro code       0xb170   0x2ea  modbus_map.o [1]
+  .text                   ro code       0xb45a     0x2  startup_ADuCM355.o [1]
+  .text                   ro code       0xb45c    0x38  crc16.o [1]
+  .text                   ro code       0xb494    0x28  printf.o [2]
+  .text                   ro code       0xb4bc   0x318  flash.o [1]
+  .text                   ro code       0xb7d4    0xd8  FltMul.o [3]
+  .text                   ro code       0xb8ac    0x2a  FltToS32.o [3]
+  .text                   ro code       0xb8d6     0x2  startup_ADuCM355.o [1]
+  .text                   ro code       0xb8d8    0x48  FltToDbl.o [3]
+  .text                   ro code       0xb920   0x258  DmaLib.o [1]
+  .text                   ro code       0xbb78   0x268  ClkLib.o [1]
+  .text                   ro code       0xbde0    0x66  ABImemset.o [4]
+  .text                   ro code       0xbe46     0x2  startup_ADuCM355.o [1]
+  .text                   ro code       0xbe48   0x7f8  measuring.o [1]
+  .text                   ro code       0xc640   0x108  DioLib.o [1]
+  .text                   ro code       0xc748     0x8  abs.o [2]
+  .text                   ro code       0xc750    0x1c  U32ToFlt.o [3]
+  .text                   ro code       0xc76c    0xe2  FltAdd.o [3]
+  .text                   ro code       0xc84e     0x2  startup_ADuCM355.o [1]
+  .text                   ro code       0xc850    0xfc  FltDiv.o [3]
+  .text                   ro code       0xc94c    0x68  DblToFlt.o [3]
+  .text                   ro code       0xc9b4    0x74  FltSub.o [3]
+  .text                   ro code       0xca28   0x314  sensing_process.o [1]
+  .text                   ro code       0xcd3c    0xb8  dac.o [1]
+  .text                   ro code       0xcdf4    0x4a  tia.o [1]
+  .text                   ro code       0xce3e     0x2  startup_ADuCM355.o [1]
+  .text                   ro code       0xce40   0x2c0  adc.o [1]
+  .text                   ro code       0xd100    0xa0  AfeDacLib.o [1]
+  .text                   ro code       0xd1a0    0xec  AfeTiaLib.o [1]
+  .text                   ro code       0xd28c   0x14c  AfeAdcLib.o [1]
+  .rodata                 const         0xd3d8   0x200  crc16.o [1]
+  .text                   ro code       0xd5d8   0x200  gpt.o [1]
+  .text                   ro code       0xd7d8    0x36  GptLib.o [1]
+  .text                   ro code       0xd80e     0x2  startup_ADuCM355.o [1]
+  .text                   ro code       0xd810   0x1c4  modbus.o [1]
+  .text                   ro code       0xd9d4   0x132  UrtLib.o [1]
+  .text                   ro code       0xdb06     0x2  startup_ADuCM355.o [1]
+  .text                   ro code       0xdb08   0x1a8  i2c.o [1]
+  .text                   ro code       0xdcb0   0x10e  I2cLib.o [1]
+  .text                   ro code       0xddbe     0x2  startup_ADuCM355.o [1]
+  .text                   ro code       0xddc0   0x1a8  option.o [1]
+  .text                   ro code       0xdf68   0x190  uart.o [1]
+  .rodata                 const         0xe0f8   0x180  flash.o [1]
+  .text                   ro code       0xe278    0xf0  main.o [1]
+  .text                   ro code       0xe368    0x2c  AfeWdtLib.o [1]
+  .text                   ro code       0xe394    0xdc  version.o [1]
+  .text                   ro code       0xe470    0x30  led.o [1]
+  .text                   ro code       0xe4a0    0xa8  hs300x.o [1]
+  .text                   ro code       0xe548    0x24  FltCmpLe.o [3]
+  .text                   ro code       0xe56c    0xd0  system_ADuCM355.o [1]
+  .rodata                 const         0xe63c    0x68  main.o [1]
+  .rodata                 const         0xe6a4    0x60  adc.o [1]
+  .text                   ro code       0xe704    0x60  startup_ADuCM355.o [1]
+  .text                   ro code       0xe764    0x1e  cmain.o [4]
+  .text                   ro code       0xe782     0x4  low_level_init.o [2]
+  .text                   ro code       0xe786     0x2  startup_ADuCM355.o [1]
+  .text                   ro code       0xe788    0x28  data_init.o [4]
+  .text                   ro code       0xe7b0     0x4  exit.o [2]
+  .text                   ro code       0xe7b4     0xa  cexit.o [4]
+  .text                   ro code       0xe7be     0x2  startup_ADuCM355.o [1]
+  .rodata                 const         0xe7c0    0x48  modbus_rtu_slave.o [1]
+  .rodata                 const         0xe808    0x48  modbus_rtu_slave.o [1]
+  .rodata                 const         0xe850    0x48  modbus_rtu_slave.o [1]
+  .rodata                 const         0xe898    0x44  modbus_rtu_slave.o [1]
+  .rodata                 const         0xe8dc    0x44  modbus_rtu_slave.o [1]
+  .rodata                 const         0xe920    0x44  modbus_rtu_slave.o [1]
+  .rodata                 const         0xe964    0x40  modbus_rtu_slave.o [1]
+  .rodata                 const         0xe9a4    0x3c  modbus_rtu_slave.o [1]
+  .rodata                 const         0xe9e0    0x3c  modbus_rtu_slave.o [1]
+  .rodata                 const         0xea1c    0x38  modbus_rtu_slave.o [1]
+  .rodata                 const         0xea54    0x38  modbus_rtu_slave.o [1]
+  .rodata                 const         0xea8c    0x38  modbus_rtu_slave.o [1]
+  .rodata                 const         0xeac4    0x38  modbus_rtu_slave.o [1]
+  .rodata                 const         0xeafc    0x38  modbus_rtu_slave.o [1]
+  .rodata                 const         0xeb34    0x34  measuring.o [1]
+  .rodata                 const         0xeb68    0x34  modbus_rtu_slave.o [1]
+  .rodata                 const         0xeb9c    0x2c  modbus_rtu_slave.o [1]
+  .rodata                 const         0xebc8    0x28  version.o [1]
+  .iar.init_table         const         0xebf0    0x28  - Linker created -
+  .rodata                 const         0xec18    0x1c  main.o [1]
+  .rodata                 const         0xec34    0x1c  option.o [1]
+  .text                   ro code       0xec50    0x16  xprout.o [2]
+  .text                   ro code       0xec66     0x2  startup_ADuCM355.o [1]
+  .rodata                 const         0xec68    0x14  modbus_rtu_slave.o [1]
+  .text                   ro code       0xec7c     0xc  cstartup_M.o [4]
+  .rodata                 const         0xec88     0x6  xlocale_c.o [2]
+  .text                   ro code       0xec8e     0x2  startup_ADuCM355.o [1]
+  .text                   ro code       0xec90     0x2  startup_ADuCM355.o [1]
+  .text                   ro code       0xec92     0x2  startup_ADuCM355.o [1]
+  .text                   ro code       0xec94     0x2  startup_ADuCM355.o [1]
+  .text                   ro code       0xec96     0x2  startup_ADuCM355.o [1]
+  .text                   ro code       0xec98     0x2  startup_ADuCM355.o [1]
+  .text                   ro code       0xec9a     0x2  startup_ADuCM355.o [1]
+  .text                   ro code       0xec9c     0x2  startup_ADuCM355.o [1]
+  .text                   ro code       0xec9e     0x2  startup_ADuCM355.o [1]
+  .text                   ro code       0xeca0     0x2  startup_ADuCM355.o [1]
+  .text                   ro code       0xeca2     0x2  startup_ADuCM355.o [1]
+  .text                   ro code       0xeca4     0x2  startup_ADuCM355.o [1]
+  .text                   ro code       0xeca6     0x2  startup_ADuCM355.o [1]
+  .text                   ro code       0xeca8     0x2  startup_ADuCM355.o [1]
+  .text                   ro code       0xecaa     0x2  startup_ADuCM355.o [1]
+  .text                   ro code       0xecac     0x2  startup_ADuCM355.o [1]
+  .text                   ro code       0xecae     0x2  startup_ADuCM355.o [1]
+  .text                   ro code       0xecb0     0x2  startup_ADuCM355.o [1]
+  .text                   ro code       0xecb2     0x2  startup_ADuCM355.o [1]
+  .text                   ro code       0xecb4     0x2  startup_ADuCM355.o [1]
+  .text                   ro code       0xecb6     0x2  startup_ADuCM355.o [1]
+  .text                   ro code       0xecb8     0x2  startup_ADuCM355.o [1]
+  .text                   ro code       0xecba     0x2  startup_ADuCM355.o [1]
+  .text                   ro code       0xecbc     0x2  startup_ADuCM355.o [1]
+  .text                   ro code       0xecbe     0x2  startup_ADuCM355.o [1]
+  .text                   ro code       0xecc0     0x2  startup_ADuCM355.o [1]
+  .text                   ro code       0xecc2     0x2  startup_ADuCM355.o [1]
+  .text                   ro code       0xecc4     0x2  startup_ADuCM355.o [1]
+  .text                   ro code       0xecc6     0x2  startup_ADuCM355.o [1]
+  .text                   ro code       0xecc8     0x2  startup_ADuCM355.o [1]
+  .text                   ro code       0xecca     0x2  startup_ADuCM355.o [1]
+  .text                   ro code       0xeccc     0x2  startup_ADuCM355.o [1]
+  .text                   ro code       0xecce     0x2  startup_ADuCM355.o [1]
+  .text                   ro code       0xecd0     0x2  startup_ADuCM355.o [1]
+  .text                   ro code       0xecd2     0x2  startup_ADuCM355.o [1]
+  .rodata                 const         0xecd4     0x0  zero_init3.o [4]
+  .rodata                 const         0xecd4     0x0  lz77_init_single.o [4]
+  Initializer bytes       const         0xecd4    0x3c  <for P3-1>
+                                      - 0xed10  0x6510
+
+Absolute sections:                               0x140
+  .noinit                 uninit   0x2000'0000   0x140  startup_ADuCM355.o [1]
+                                 - 0x2000'0140   0x140
+
+"P3", part 1 of 2:                                0x94
+  P3-1                             0x2000'0140    0x94  <Init block>
+    .data                 inited   0x2000'0140     0x4  ClkLib.o [1]
+    .data                 inited   0x2000'0144     0x4  ClkLib.o [1]
+    .data                 inited   0x2000'0148     0x4  ClkLib.o [1]
+    .data                 inited   0x2000'014c     0x4  ClkLib.o [1]
+    .data                 inited   0x2000'0150     0x4  ClkLib.o [1]
+    .data                 inited   0x2000'0154    0x38  xlocale_c.o [2]
+    .data                 inited   0x2000'018c    0x48  xlocale_c.o [2]
+                                 - 0x2000'01d4    0x94
+
+"P3", part 2 of 2:                               0xd0c
+  .bss                    zero     0x2000'01d4   0x40c  modbus_map.o [1]
+  .bss                    zero     0x2000'0800   0x400  DmaLib.o [1]
+  .bss                    zero     0x2000'0c00   0x188  flash.o [1]
+  .bss                    zero     0x2000'0d88    0xb0  adc.o [1]
+  .bss                    zero     0x2000'0e38    0x6c  measuring.o [1]
+  .bss                    zero     0x2000'0ea4    0x10  gpt.o [1]
+  .bss                    zero     0x2000'0eb4     0xc  hs300x.o [1]
+  .bss                    zero     0x2000'0ec0     0x4  version.o [1]
+  .bss                    zero     0x2000'0ec4     0x4  xfail_s.o [2]
+  .bss                    zero     0x2000'0ec8     0x2  adc.o [1]
+  .bss                    zero     0x2000'0eca     0x2  flash.o [1]
+  .bss                    zero     0x2000'0ecc     0x2  i2c.o [1]
+  .bss                    zero     0x2000'0ece     0x2  main.o [1]
+  .bss                    zero     0x2000'0ed0     0x2  uart.o [1]
+  .bss                    zero     0x2000'0ed2     0x2  uart.o [1]
+  .bss                    zero     0x2000'0ed4     0x2  uart.o [1]
+  .bss                    zero     0x2000'0ed6     0x2  uart.o [1]
+  .bss                    zero     0x2000'0ed8     0x2  uart.o [1]
+  .bss                    zero     0x2000'0eda     0x2  uart.o [1]
+  .bss                    zero     0x2000'0edc     0x1  main.o [1]
+  .bss                    zero     0x2000'0edd     0x1  option.o [1]
+                                 - 0x2000'0ede   0xd0a
+
+"A5":                                            0x400
+  CSTACK                           0x2000'1c00   0x400  <Block>
+    CSTACK                uninit   0x2000'1c00   0x400  <Block tail>
+                                 - 0x2000'2000   0x400
+
+"P6":                                           0x2b04
+  never_retained_ram      zero     0x2004'0000  0x25bc  sensing_process.o [1]
+  never_retained_ram      zero     0x2004'25bc   0x548  modbus.o [1]
+                                 - 0x2004'2b04  0x2b04
+
+Unused ranges:
+
+         From           To      Size
+         ----           --      ----
+       0xed10     0x1'ffff  0x1'12f0
+  0x2000'0ee0  0x2000'1bff     0xd20
+  0x2004'2b04  0x2004'7fff    0x54fc
+
+
+*******************************************************************************
+*** INIT TABLE
+***
+
+          Address      Size
+          -------      ----
+Zero (__iar_zero_init3)
+    2 destination ranges, total size 0x380e:
+          0x2000'01d4   0xd0a
+          0x2004'0000  0x2b04
+
+Copy/lz77 (__iar_lz77_init_single3)
+    1 source range, total size 0x3c (40% of destination):
+               0xecd4    0x3c
+    1 destination range, total size 0x94:
+          0x2000'0140    0x94
+
+
+
+*******************************************************************************
+*** MODULE SUMMARY
+***
+
+    Module                 ro code  ro data  rw data  rw data
+                                                       (abs)
+    ------                 -------  -------  -------  -------
+command line/config:
+    ---------------------------------------------------------
+    Total:
+
+D:\2_Projects\3_MyProjects\FW_Update_TFTP\FW\Remote_FW_update\REV0.18_20240710\Debug\Obj: [1]
+    AfeAdcLib.o                332
+    AfeDacLib.o                160
+    AfeTiaLib.o                236
+    AfeWdtLib.o                 44
+    ClkLib.o                   616        8       20
+    DioLib.o                   264
+    DmaLib.o                   600             1 024
+    GptLib.o                    54
+    I2cLib.o                   270
+    UrtLib.o                   306
+    adc.o                      704       96      178
+    crc16.o                     56      512
+    dac.o                      184
+    flash.o                    792      384      394
+    gpt.o                      512                16
+    hs300x.o                   168                12
+    i2c.o                      424                 2
+    led.o                       48
+    main.o                     240      132        3
+    measuring.o              2 040       52      108
+    modbus.o                   452             1 352
+    modbus_map.o               746             1 036
+    modbus_rtu_slave.o       3 120    1 000
+    option.o                   424       28        1
+    sensing_process.o          788             9 660
+    startup_ADuCM355.o         212      344               320
+    system_ADuCM355.o          208
+    tia.o                       74
+    uart.o                     400                12
+    version.o                  220       40        4
+    ---------------------------------------------------------
+    Total:                  14 694    2 596   13 822      320
+
+dl7M_tlf.a: [2]
+    abort.o                      6
+    abs.o                        8
+    exit.o                       4
+    low_level_init.o             4
+    printf.o                    40
+    xencoding_8859_1.o          30
+    xfail_s.o                   64                 4
+    xlocale_c.o                120       58      128
+    xmbcurmax.o                 10
+    xprintffull.o            3 910
+    xprout.o                    22
+    ---------------------------------------------------------
+    Total:                   4 218       58      132
+
+m7M_tl.a: [3]
+    DblAdd.o                   378
+    DblCmpGe.o                  46
+    DblCmpLe.o                  46
+    DblDiv.o                   582
+    DblMul.o                   418
+    DblSub.o                   226
+    DblToFlt.o                 104
+    DblToS32.o                  58
+    DblToU32.o                  40
+    FltAdd.o                   226
+    FltCmpLe.o                  36
+    FltDiv.o                   252
+    FltMul.o                   216
+    FltSub.o                   116
+    FltToDbl.o                  72
+    FltToS32.o                  42
+    S32ToDbl.o                  34
+    U32ToDbl.o                  26
+    U32ToFlt.o                  28
+    frexp.o                    112
+    ldexp.o                    314
+    ---------------------------------------------------------
+    Total:                   3 372
+
+rt7M_tl.a: [4]
+    ABImemcpy_unaligned.o      118
+    ABImemset.o                102
+    I64DivMod.o                560
+    I64DivZer.o                  2
+    cexit.o                     10
+    cmain.o                     30
+    cstartup_M.o                12
+    data_init.o                 40
+    lz77_init_single.o         122
+    memchr.o                    88
+    strchr.o                    22
+    strlen.o                    54
+    zero_init3.o                58
+    ---------------------------------------------------------
+    Total:                   1 218
+
+shb_l.a: [5]
+    exit.o                      20
+    ---------------------------------------------------------
+    Total:                      20
+
+    Gaps                                         544
+    Linker created                       40    1 028
+-------------------------------------------------------------
+    Grand Total:            23 522    2 694   15 526      320
+
+
+*******************************************************************************
+*** ENTRY LIST
+***
+
+Entry                       Address    Size  Type      Object
+-----                       -------    ----  ----      ------
+.iar.init_table$$Base        0xebf0           --   Gb  - Linker created -
+.iar.init_table$$Limit       0xec18           --   Gb  - Linker created -
+?main                        0xe765          Code  Gb  cmain.o [4]
+ADC_CHn_Polling              0xcf39    0xb0  Code  Gb  adc.o [1]
+ADC_Conversion_Ready         0xcfe9    0x24  Code  Gb  adc.o [1]
+ADC_Conversion_Start         0xd00d    0x22  Code  Gb  adc.o [1]
+ADC_ErrCntMin           0x2000'0ec8     0x2  Data  Lc  adc.o [1]
+ADC_Handle              0x2000'0d88    0xb0  Data  Gb  adc.o [1]
+ADC_Init                     0xce5f    0xda  Code  Gb  adc.o [1]
+ADC_Select_Mux               0xd02f    0x32  Code  Lc  adc.o [1]
+ADmux                        0xe6a4    0x60  Data  Lc  adc.o [1]
+AfeAdcChan                   0xd36d    0x1c  Code  Gb  AfeAdcLib.o [1]
+AfeAdcFiltCfg                0xd2b5    0x2c  Code  Gb  AfeAdcLib.o [1]
+AfeAdcGo                     0xd389    0x24  Code  Gb  AfeAdcLib.o [1]
+AfeAdcIntCfg                 0xd2e1     0xe  Code  Gb  AfeAdcLib.o [1]
+AfeAdcPgaCfg                 0xd2ef    0x7e  Code  Gb  AfeAdcLib.o [1]
+AfeAdcPwrUp                  0xd28d    0x1a  Code  Gb  AfeAdcLib.o [1]
+AfeAdc_Int_Handler           0xd061    0x72  Code  Gb  adc.o [1]
+AfeClkSel                    0xbb79    0x98  Code  Gb  ClkLib.o [1]
+AfeDioCfgPin                 0xc6e7    0x32  Code  Gb  DioLib.o [1]
+AfeDioIenPin                 0xc72f    0x16  Code  Gb  DioLib.o [1]
+AfeDioPulPin                 0xc719    0x16  Code  Gb  DioLib.o [1]
+AfeDioRd                     0xc745     0x4  Code  Gb  DioLib.o [1]
+AfeLpTiaAdvanced             0xd247    0x36  Code  Gb  AfeTiaLib.o [1]
+AfeLpTiaCon                  0xd1c3    0x5a  Code  Gb  AfeTiaLib.o [1]
+AfeLpTiaPwrDown              0xd21d    0x2a  Code  Gb  AfeTiaLib.o [1]
+AfeLpTiaSwitchCfg            0xd1a1    0x22  Code  Gb  AfeTiaLib.o [1]
+AfeRootClkSpeed         0x2000'0144     0x4  Data  Lc  ClkLib.o [1]
+AfeSysCfg                    0xd2a7     0xe  Code  Gb  AfeAdcLib.o [1]
+AfeSysClkDiv                 0xbca5    0x5a  Code  Gb  ClkLib.o [1]
+AfeSysClkSpeed          0x2000'014c     0x4  Data  Lc  ClkLib.o [1]
+AfeWdtGo                     0xe369    0x26  Code  Gb  AfeWdtLib.o [1]
+CHECKSUM$$Base                0x7fc           --   Gb  - Linker created -
+CHECKSUM$$Limit               0x800           --   Gb  - Linker created -
+CRC16                        0xb45d    0x38  Code  Gb  crc16.o [1]
+CSTACK$$Base            0x2000'1c00           --   Gb  - Linker created -
+CSTACK$$Limit           0x2000'2000           --   Gb  - Linker created -
+CacheMore                    0x97c5    0x24  Code  Lc  xlocale_c.o [2]
+ClkDivCfg                    0xbc6d    0x38  Code  Gb  ClkLib.o [1]
+CrcOfReadKey                 0x8190     0x4  Data  Gb  startup_ADuCM355.o [1]
+D2DClkSpeedCheck             0xbd57    0x20  Code  Gb  ClkLib.o [1]
+DMA_FLASH0_Int_Handler       0xb77d    0x20  Code  Gb  flash.o [1]
+DigClkSel                    0xbc11    0x5c  Code  Gb  ClkLib.o [1]
+DigRootClkSpeed         0x2000'0148     0x4  Data  Lc  ClkLib.o [1]
+DioCfgPin                    0xc641    0x32  Code  Gb  DioLib.o [1]
+DioClrPin                    0xc6c1     0x8  Code  Gb  DioLib.o [1]
+DioDsPin                     0xc6d1    0x16  Code  Gb  DioLib.o [1]
+DioIenPin                    0xc69f    0x16  Code  Gb  DioLib.o [1]
+DioOenPin                    0xc673    0x16  Code  Gb  DioLib.o [1]
+DioPulPin                    0xc689    0x16  Code  Gb  DioLib.o [1]
+DioRd                        0xc6b5     0x4  Code  Gb  DioLib.o [1]
+DioSetPin                    0xc6b9     0x8  Code  Gb  DioLib.o [1]
+DioTglPin                    0xc6c9     0x8  Code  Gb  DioLib.o [1]
+DmaBase                      0xb935    0x32  Code  Gb  DmaLib.o [1]
+DmaGo                        0xbb05    0x3e  Code  Gb  DmaLib.o [1]
+DmaPeripheralStructSetup
+                             0xb989    0x64  Code  Gb  DmaLib.o [1]
+DmaSet                       0xb967    0x22  Code  Gb  DmaLib.o [1]
+DmaStructPtrOutSetup         0xb9ed   0x118  Code  Gb  DmaLib.o [1]
+Dma_GetDescriptor            0xb921    0x14  Code  Gb  DmaLib.o [1]
+FLASH_CRC_Check              0xb741    0x3c  Code  Lc  flash.o [1]
+FLASH_ErrCntMin         0x2000'0eca     0x2  Data  Gb  flash.o [1]
+FLASH_Init                   0xb4db    0x7c  Code  Gb  flash.o [1]
+FLASH_Load                   0xb70f    0x24  Code  Lc  flash.o [1]
+FLASH_Make_CRC               0xb733     0xe  Code  Lc  flash.o [1]
+FLASH_Read                   0xb6fd    0x12  Code  Lc  flash.o [1]
+FLASH_Task                   0xb557    0x74  Code  Gb  flash.o [1]
+FLASH_Update                 0xb5cb    0x60  Code  Gb  flash.o [1]
+FLASH_Write_DMA              0xb62b    0xd2  Code  Lc  flash.o [1]
+Flash_Handle            0x2000'0c00   0x188  Data  Gb  flash.o [1]
+GPIO_Init                    0xdeb3    0xa0  Code  Lc  option.o [1]
+GPIO_Init                    0xe049    0x80  Code  Lc  uart.o [1]
+GPT_Init                     0xd623    0x70  Code  Gb  gpt.o [1]
+GP_Tmr0_Int_Handler          0xd693   0x10c  Code  Gb  gpt.o [1]
+GP_Tmr1_Int_Handler          0xd79f    0x24  Code  Gb  gpt.o [1]
+GptCfg                       0xd7d9    0x22  Code  Gb  GptLib.o [1]
+GptClrInt                    0xd807     0x8  Code  Gb  GptLib.o [1]
+GptLd                        0xd7fb     0x8  Code  Gb  GptLib.o [1]
+GptSta                       0xd803     0x4  Code  Gb  GptLib.o [1]
+HS300x                  0x2000'0eb4     0xc  Data  Gb  hs300x.o [1]
+HS300x_Data_Fetch_Load       0xe4e3    0x5e  Code  Lc  hs300x.o [1]
+HS300x_Measurement_Requests
+                             0xe4bb    0x28  Code  Lc  hs300x.o [1]
+HS300x_Task                  0xe4a1    0x1a  Code  Gb  hs300x.o [1]
+HardwareVersion         0x2000'0ec0     0x4  Data  Gb  version.o [1]
+I2C0_ErrCheck                0xdc5d    0x42  Code  Lc  i2c.o [1]
+I2C_ErrCntMin           0x2000'0ecc     0x2  Data  Gb  i2c.o [1]
+I2C_Init                     0xdb09    0x4e  Code  Gb  i2c.o [1]
+I2C_RxPacket                 0xdbe3    0x7a  Code  Gb  i2c.o [1]
+I2C_TxPacket                 0xdb57    0x8c  Code  Gb  i2c.o [1]
+I2cBaud                      0xdd37    0x12  Code  Gb  I2cLib.o [1]
+I2cFifoFlush                 0xdcc3    0x50  Code  Gb  I2cLib.o [1]
+I2cMCfg                      0xdcb1    0x12  Code  Gb  I2cLib.o [1]
+I2cMRdCfg                    0xdd7b    0x44  Code  Gb  I2cLib.o [1]
+I2cMWrCfg                    0xdd49    0x32  Code  Gb  I2cLib.o [1]
+I2cRx                        0xdd13     0xe  Code  Gb  I2cLib.o [1]
+I2cTx                        0xdd21    0x16  Code  Gb  I2cLib.o [1]
+IntID                   0x2000'0ed2     0x2  Data  Gb  uart.o [1]
+LED_Init                     0xe471    0x30  Code  Gb  led.o [1]
+LPDAC_Config                 0xcd3d    0xb8  Code  Gb  dac.o [1]
+LPDacCfg                     0xd13f    0x2e  Code  Gb  AfeDacLib.o [1]
+LPDacPwrCtrl                 0xd101    0x3e  Code  Gb  AfeDacLib.o [1]
+LPDacWr                      0xd16d    0x22  Code  Gb  AfeDacLib.o [1]
+LPTIA_Config                 0xcdf5    0x4a  Code  Gb  tia.o [1]
+LineStatus              0x2000'0ed0     0x2  Data  Gb  uart.o [1]
+LoadInt                      0x89c3    0x7a  Code  Lc  xprintffull.o [2]
+MODBUS_Init                  0xd811    0x4c  Code  Gb  modbus.o [1]
+MODBUS_Map_Update_Check
+                             0xb459     0x2  Code  Gb  modbus_map.o [1]
+MODBUS_Mapping               0xb171   0x2ce  Code  Gb  modbus_map.o [1]
+MODBUS_Packet_Send           0xd99f    0x2a  Code  Lc  modbus.o [1]
+MODBUS_RTU_Init_Slave        0xa55f    0x1a  Code  Gb  modbus_rtu_slave.o [1]
+MODBUS_RTU_Packet_Decoder_Slave
+                             0xa579    0x8a  Code  Gb  modbus_rtu_slave.o [1]
+MODBUS_RTU_Read_Coils_Slave
+                             0xa603   0x156  Code  Lc  modbus_rtu_slave.o [1]
+MODBUS_RTU_Read_Discretes_Input_Slave
+                             0xa759   0x156  Code  Lc  modbus_rtu_slave.o [1]
+MODBUS_RTU_Read_Holding_Registers_Slave
+                             0xa9c5    0xfe  Code  Lc  modbus_rtu_slave.o [1]
+MODBUS_RTU_Read_Input_Registers_Slave
+                             0xa8af   0x116  Code  Lc  modbus_rtu_slave.o [1]
+MODBUS_RTU_Write_Multiple_Coils_Slave
+                             0xaccb   0x26a  Code  Lc  modbus_rtu_slave.o [1]
+MODBUS_RTU_Write_Multiple_Registers_Slave
+                             0xaff3   0x120  Code  Lc  modbus_rtu_slave.o [1]
+MODBUS_RTU_Write_Single_Coil_Slave
+                             0xaac3   0x208  Code  Lc  modbus_rtu_slave.o [1]
+MODBUS_RTU_Write_Single_Register_Slave
+                             0xaf35    0xbe  Code  Lc  modbus_rtu_slave.o [1]
+MODBUS_Rx_Interrupt_Callback
+                             0xd8bd    0x50  Code  Gb  modbus.o [1]
+MODBUS_Rx_Packet_Check       0xd93f    0x60  Code  Gb  modbus.o [1]
+MODBUS_Task                  0xd85d    0x60  Code  Gb  modbus.o [1]
+MODBUS_Tx_Interrupt_Callback
+                             0xd90d    0x32  Code  Gb  modbus.o [1]
+MeasHandle              0x2000'0e38    0x6c  Data  Gb  measuring.o [1]
+Measuring_Data_Calculation
+                             0xbef1   0x6f8  Code  Lc  measuring.o [1]
+Measuring_Init               0xbe49     0xc  Code  Gb  measuring.o [1]
+Measuring_Task               0xbe55    0x9c  Code  Gb  measuring.o [1]
+ModbusHandle            0x2004'25bc   0x548  Data  Gb  modbus.o [1]
+ModbusMap               0x2000'01d4   0x40c  Data  Gb  modbus_map.o [1]
+NumLsInts               0x2000'0ed6     0x2  Data  Gb  uart.o [1]
+NumOfCRCPages                0x8194     0x4  Data  Gb  startup_ADuCM355.o [1]
+NumRxInts               0x2000'0ed4     0x2  Data  Gb  uart.o [1]
+NumToInts               0x2000'0eda     0x2  Data  Gb  uart.o [1]
+NumTxInts               0x2000'0ed8     0x2  Data  Gb  uart.o [1]
+ReadProKeyHsh                0x8180    0x10  Data  Gb  startup_ADuCM355.o [1]
+Region$$Table$$Base          0xebf0           --   Gb  - Linker created -
+Region$$Table$$Limit         0xec18           --   Gb  - Linker created -
+SYSTEM_FLASH_DEFAULT         0xe0f8   0x180  Data  Lc  flash.o [1]
+SensingProcess          0x2004'0000  0x25bc  Data  Gb  sensing_process.o [1]
+Sensing_Parameter_Update
+                             0xcbef   0x13c  Code  Lc  sensing_process.o [1]
+Sensing_Process              0xcadb   0x114  Code  Gb  sensing_process.o [1]
+Sensing_Process_Init         0xca29    0xb2  Code  Gb  sensing_process.o [1]
+SystemClock_Config           0xe2e3    0x52  Code  Lc  main.o [1]
+SystemError             0x2000'0ece     0x2  Data  Gb  main.o [1]
+SystemOption            0x2000'0edd     0x1  Data  Gb  option.o [1]
+SystemState             0x2000'0edc     0x1  Data  Gb  main.o [1]
+System_Opt_Load              0xddc1    0xf2  Code  Gb  option.o [1]
+System_Ver_Load              0xe395    0xdc  Code  Gb  version.o [1]
+TaskSyncTimer           0x2000'0ea4    0x10  Data  Gb  gpt.o [1]
+UART_Init                    0xdfc9    0x26  Code  Gb  uart.o [1]
+UART_Int_Handler             0xdfef    0x5a  Code  Gb  uart.o [1]
+UrtCfg                       0xd9d5   0x100  Code  Gb  UrtLib.o [1]
+UrtIntCfg                    0xdaff     0x8  Code  Gb  UrtLib.o [1]
+UrtTx                        0xdaed    0x12  Code  Gb  UrtLib.o [1]
+Variable_Init                0xe335     0xe  Code  Lc  main.o [1]
+_Encoding_8859_1_Mbrlen
+                             0x9911     0x2  Code  Gb  xencoding_8859_1.o [2]
+_Encoding_8859_1_Wctomb
+                             0x98ff    0x12  Code  Gb  xencoding_8859_1.o [2]
+_GenldFull                   0x9421   0x274  Code  Lc  xprintffull.o [2]
+_LdtobFull                   0x901d   0x3d6  Code  Lc  xprintffull.o [2]
+_LitobFull                   0x8ecd   0x10a  Code  Lc  xprintffull.o [2]
+_Locale_lconv           0x2000'0154    0x38  Data  Lc  xlocale_c.o [2]
+_PrintfFull                  0x8801   0x1aa  Code  Gb  xprintffull.o [2]
+_Prout                       0xec51    0x16  Code  Gb  xprout.o [2]
+_PutcharsFull                0x9695    0x2e  Code  Lc  xprintffull.o [2]
+_PutfldFull                  0x8a3d   0x2d4  Code  Lc  xprintffull.o [2]
+_PutstrFull                  0x8e07    0xc6  Code  Lc  xprintffull.o [2]
+_PuttxtFull                  0x8d11    0xf6  Code  Lc  xprintffull.o [2]
+__NVIC_EnableIRQ             0xce41    0x1e  Code  Lc  adc.o [1]
+__NVIC_EnableIRQ             0xb4bd    0x1e  Code  Lc  flash.o [1]
+__NVIC_EnableIRQ             0xd5d9    0x1e  Code  Lc  gpt.o [1]
+__NVIC_EnableIRQ             0xdf69    0x1e  Code  Lc  uart.o [1]
+__NVIC_SetPriority           0xd5f7    0x2c  Code  Lc  gpt.o [1]
+__NVIC_SystemReset           0xa541    0x1e  Code  Lc  modbus_rtu_slave.o [1]
+__aeabi_cdcmple              0x9e3d          Code  Gb  DblCmpLe.o [3]
+__aeabi_cdrcmple             0x9e6d          Code  Gb  DblCmpGe.o [3]
+__aeabi_cfcmple              0xe549          Code  Gb  FltCmpLe.o [3]
+__aeabi_d2f                  0xc94d          Code  Gb  DblToFlt.o [3]
+__aeabi_d2iz                 0x9fd9          Code  Gb  DblToS32.o [3]
+__aeabi_d2uiz                0xa365          Code  Gb  DblToU32.o [3]
+__aeabi_dadd                 0xa3b1          Code  Gb  DblAdd.o [3]
+__aeabi_ddiv                 0xa11d          Code  Gb  DblDiv.o [3]
+__aeabi_dmul                 0x9c29          Code  Gb  DblMul.o [3]
+__aeabi_dsub                 0xa039          Code  Gb  DblSub.o [3]
+__aeabi_f2d                  0xb8d9          Code  Gb  FltToDbl.o [3]
+__aeabi_f2iz                 0xb8ad          Code  Gb  FltToS32.o [3]
+__aeabi_fadd                 0xc76d          Code  Gb  FltAdd.o [3]
+__aeabi_fdiv                 0xc851          Code  Gb  FltDiv.o [3]
+__aeabi_fmul                 0xb7d5          Code  Gb  FltMul.o [3]
+__aeabi_i2d                  0xa015          Code  Gb  S32ToDbl.o [3]
+__aeabi_ldiv0                0xa3ad          Code  Gb  I64DivZer.o [4]
+__aeabi_memset               0xbde1          Code  Gb  ABImemset.o [4]
+__aeabi_ui2d                 0xa38d          Code  Gb  U32ToDbl.o [3]
+__aeabi_ui2f                 0xc751          Code  Gb  U32ToFlt.o [3]
+__aeabi_uldivmod             0x99f9          Code  Gb  I64DivMod.o [4]
+__cmain                      0xe765          Code  Gb  cmain.o [4]
+__exit                       0xa52d    0x14  Code  Gb  exit.o [5]
+__iar_Fail_s                 0x9889    0x1c  Code  Gb  xfail_s.o [2]
+__iar_Mbcurmax               0x9975     0xa  Code  Gb  xmbcurmax.o [2]
+__iar_Memchr                 0x991d          Code  Gb  memchr.o [4]
+__iar_Memset                 0xbde1          Code  Gb  ABImemset.o [4]
+__iar_Memset_word            0xbde9          Code  Gb  ABImemset.o [4]
+__iar_Strchr                 0x9839          Code  Gb  strchr.o [4]
+__iar_dadd                   0xa049          Code  Gb  DblSub.o [3]
+__iar_data_init3             0xe789    0x28  Code  Gb  data_init.o [4]
+__iar_dsub                   0xa3c1          Code  Gb  DblAdd.o [3]
+__iar_dsubStart              0xa3d3          Code  Gb  DblAdd.o [3]
+__iar_fadd                   0xc9b5          Code  Gb  FltSub.o [3]
+__iar_frexp                  0x9dd9          Code  Gb  frexp.o [3]
+__iar_frexp64                0x9dcd          Code  Gb  frexp.o [3]
+__iar_frexpl                 0x9dd9          Code  Gb  frexp.o [3]
+__iar_fsub                   0xc779          Code  Gb  FltAdd.o [3]
+__iar_fsubStart              0xc789          Code  Gb  FltAdd.o [3]
+__iar_globLocale        0x2000'018c    0x48  Data  Lc  xlocale_c.o [2]
+__iar_global_Locale          0x97c1     0x4  Code  Gb  xlocale_c.o [2]
+__iar_init_core              0xe279     0x8  Code  Gb  main.o [1]
+__iar_ldexp64                0x9e9d          Code  Gb  ldexp.o [3]
+__iar_lz77_init_single3
+                             0x9747    0x7a  Code  Gb  lz77_init_single.o [4]
+__iar_program_start          0xec7d          Code  Gb  cstartup_M.o [4]
+__iar_scalbln64              0x9e9d          Code  Gb  ldexp.o [3]
+__iar_scalbn64               0x9e9d          Code  Gb  ldexp.o [3]
+__iar_unaligned_memcpy       0x9981          Code  Gb  ABImemcpy_unaligned.o [4]
+__iar_unaligned_memcpy4
+                             0x99a1          Code  Gb  ABImemcpy_unaligned.o [4]
+__iar_unaligned_memcpy8
+                             0x99a1          Code  Gb  ABImemcpy_unaligned.o [4]
+__iar_zero_init3             0x984f    0x3a  Code  Gb  zero_init3.o [4]
+__low_level_init             0xe783     0x4  Code  Gb  low_level_init.o [2]
+__relocated_vector_table
+                        0x2000'0000   0x140  Data  Gb  startup_ADuCM355.o [1]
+__vector_table               0x8000   0x140  Data  Gb  startup_ADuCM355.o [1]
+_call_main                   0xe771          Code  Gb  cmain.o [4]
+_exit                        0xe7b5          Code  Gb  cexit.o [4]
+_gLocale_mblen               0x9825     0x4  Code  Gb  xlocale_c.o [2]
+_gLocale_mblenInt            0x97e9    0x2c  Code  Gb  xlocale_c.o [2]
+_gLocale_wctomb              0x9829     0x4  Code  Gb  xlocale_c.o [2]
+_gLocale_wctombInt           0x9821     0x4  Code  Gb  xlocale_c.o [2]
+_main                        0xe77f          Code  Gb  cmain.o [4]
+abort                        0xa3a7     0x6  Code  Gb  abort.o [2]
+abs                          0xc749     0x8  Code  Gb  abs.o [2]
+adi_default_setting          0xe5c9    0x42  Code  Gb  system_ADuCM355.o [1]
+adi_system_EnableISRAM       0xe56d    0x20  Code  Gb  system_ADuCM355.o [1]
+adi_system_EnableRetention
+                             0xe58d    0x3c  Code  Gb  system_ADuCM355.o [1]
+clk10UsDelay            0x2000'0150     0x4  Data  Lc  ClkLib.o [1]
+clkHclkSpeed            0x2000'0140     0x4  Data  Lc  ClkLib.o [1]
+clockUpdate                  0xbcff    0x58  Code  Gb  ClkLib.o [1]
+delay_10us                   0xbd77    0x1a  Code  Gb  ClkLib.o [1]
+dmaChanDesc             0x2000'0800   0x400  Data  Gb  DmaLib.o [1]
+exit                         0xe7b1     0x4  Code  Gb  exit.o [2]
+frexp                        0x9dcd          Code  Gb  frexp.o [3]
+frexpl                       0x9dcd          Code  Gb  frexp.o [3]
+ldexp                        0x9e9d          Code  Gb  ldexp.o [3]
+ldexpl                       0x9e9d          Code  Gb  ldexp.o [3]
+localeconv                   0x982d     0x4  Code  Gb  xlocale_c.o [2]
+main                         0xe281    0x62  Code  Gb  main.o [1]
+memchr                       0x991d          Code  Gb  memchr.o [4]
+printf                       0xb495    0x28  Code  Gb  printf.o [2]
+putchar                      0xdf87    0x42  Code  Gb  uart.o [1]
+scalbln                      0x9e9d          Code  Gb  ldexp.o [3]
+scalblnl                     0x9e9d          Code  Gb  ldexp.o [3]
+scalbn                       0x9e9d          Code  Gb  ldexp.o [3]
+scalbnl                      0x9e9d          Code  Gb  ldexp.o [3]
+scale                        0x8fd7    0x46  Code  Lc  xprintffull.o [2]
+sec_hand                0x2000'0ec4     0x4  Data  Lc  xfail_s.o [2]
+strchr                       0x9839          Code  Gb  strchr.o [4]
+strlen                       0x98c9          Code  Gb  strlen.o [4]
+wCRCTable                    0xd3d8   0x200  Data  Lc  crc16.o [1]
+
+
+[1] = D:\2_Projects\3_MyProjects\FW_Update_TFTP\FW\Remote_FW_update\REV0.18_20240710\Debug\Obj
+[2] = dl7M_tlf.a
+[3] = m7M_tl.a
+[4] = rt7M_tl.a
+[5] = shb_l.a
+
+  23 522 bytes of readonly  code memory
+   2 694 bytes of readonly  data memory
+  15 526 bytes of readwrite data memory (+ 320 absolute)
+
+Errors: none
+Warnings: none

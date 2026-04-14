@@ -1,0 +1,166 @@
+#define __SENSOR_EEP_MAP_C__
+    #include "sensor_eep_map.h"
+#undef  __SENSOR_EEP_MAP_C__
+
+/* Start abbreviation */
+/* End abbreviation */
+
+/* Start Include */
+#include "measuring.h"
+/* End Include */
+
+/* Start Define */
+/* End Define */
+
+/* Start Enum */
+/* End Enum */
+
+/* Start Struct */
+/* End Struct */
+
+/* Start Function */
+/* End Function */
+
+/* Start Variable */
+const U16	SENSOR_EEP_CT_CHn_DEFAULT[SENSOR_EEP_BLK_SIZE] =
+{
+	SENSOR_EEP_PREFIX,					// SENSOR_EEP_CHn_PREFIX
+	0,									// SENSOR_EEP_CHn_PTM_mOFFS_TIA_0
+	LPTIA_SWMODE_OFF,					// SENSOR_EEP_CHn_PTM_mGAIN_TIA_1
+	400,								// SENSOR_EEP_CHn_AMP_CAL_TARGET_mV_OFFS
+	1800,								// SENSOR_EEP_CHn_AMP_CAL_TARGET_mV_GAIN
+	400,								// SENSOR_EEP_CHn_VBIAS
+	30,									// SENSOR_EEP_CHn_STABLE_HOLD_TIME_SEC
+	52429,								// SENSOR_EEP_CHn_mZERO_L
+	16076,								// SENSOR_EEP_CHn_mZERO_H
+	0,									// SENSOR_EEP_CHn_mZERO_TEMP_L
+	16932,								// SENSOR_EEP_CHn_mZERO_TEMP_H
+	26214,								// SENSOR_EEP_CHn_mSPAN_L
+	16358,								// SENSOR_EEP_CHn_mSPAN_H
+	0,									// SENSOR_EEP_CHn_mSPAN_TEMP_L
+	16932,								// SENSOR_EEP_CHn_mSPAN_TEMP_H
+	50,									// SENSOR_EEP_CHn_SPAN_GAS
+	52429,								// SENSOR_EEP_CHn_bZERO_L
+	16076,								// SENSOR_EEP_CHn_bZERO_H
+	0,									// SENSOR_EEP_CHn_bZERO_TEMP_L
+	16932,								// SENSOR_EEP_CHn_bZERO_TEMP_H
+	26214,								// SENSOR_EEP_CHn_bSPAN_L
+	16358,								// SENSOR_EEP_CHn_bSPAN_H
+	0,									// SENSOR_EEP_CHn_bSPAN_TEMP_L
+	16932,								// SENSOR_EEP_CHn_bSPAN_TEMP_H
+	0,									// SENSOR_EEP_CHn_RES_25
+	0,									// SENSOR_EEP_CHn_GAS_NAME_0
+	0,									// SENSOR_EEP_CHn_GAS_NAME_1
+	0,									// SENSOR_EEP_CHn_GAS_NAME_2
+	0,									// SENSOR_EEP_CHn_GAS_NAME_3
+	0,									// SENSOR_EEP_CHn_GAS_NAME_4
+	0,									// SENSOR_EEP_CHn_GAS_NAME_5
+	0,									// SENSOR_EEP_CHn_RES_32
+	false,								// SENSOR_EEP_CHn_bZERO_USE
+	30,									// SENSOR_EEP_CHn_bZERO_PERCENTAGE_x10
+	120,								// SENSOR_EEP_CHn_bZERO_SEC
+	0,									// SENSOR_EEP_CHn_bZERO_COUNT
+	MEASURING_METHOD_CT,				// SENSOR_EEP_CHn_METHOD
+	0,									// SENSOR_EEP_CHn_SEN_NO
+	0,									// SENSOR_EEP_CHn_GAS_NO
+	0,									// SENSOR_EEP_CHn_DP
+	100,								// SENSOR_EEP_CHn_HIGH_SCALE
+	MEASURING_UNIT_PPM,					// SENSOR_EEP_CHn_UNIT
+	0,									// SENSOR_EEP_CHn_MAINTENANCE_GAS
+	100,								// SENSOR_EEP_CHn_CROSS_SENS_SCALE_x100
+	70,									// SENSOR_EEP_CHn_ZERO_SKIP_PERCENTAGE_x10
+	30,									// SENSOR_EEP_CHn_SPAN_SKIP_PERCENTAGE_x10
+	70,									// SENSOR_EEP_CHn_OUT_DELAY_PERCENTAGE_x10
+	5,									// SENSOR_EEP_CHn_OUT_DELAY_SEC
+	false,								// SENSOR_EEP_CHn_ALARM_UNDER_CHECK
+	false,								// SENSOR_EEP_CHn_ALARM_1ST_LATCH
+	true,								// SENSOR_EEP_CHn_ALARM_1ST_INCREASE_TYPE
+	20,									// SENSOR_EEP_CHn_ALARM_1ST_LEVEL
+	0,									// SENSOR_EEP_CHn_ALARM_1ST_DEAD_BAND
+	0,									// SENSOR_EEP_CHn_ALARM_1ST_DELAY_SEC
+	false,								// SENSOR_EEP_CHn_ALARM_2ND_LATCH
+	true,								// SENSOR_EEP_CHn_ALARM_2ND_INCREASE_TYPE
+	40,									// SENSOR_EEP_CHn_ALARM_2ND_LEVEL
+	0,									// SENSOR_EEP_CHn_ALARM_2ND_DEAD_BAND
+	0,									// SENSOR_EEP_CHn_ALARM_2ND_DELAY_SEC
+	0,									// SENSOR_EEP_CHn_RES_60
+	0,									// SENSOR_EEP_CHn_RES_61
+	0,									// SENSOR_EEP_CHn_RES_62
+	0,									// SENSOR_EEP_CHn_RES_63
+	0									// SENSOR_EEP_CHn_RES_64
+};
+
+const U16	SENSOR_EEP_IR_CHn_DEFAULT[SENSOR_EEP_BLK_SIZE] =
+{
+	SENSOR_EEP_PREFIX,					// SENSOR_EEP_CHn_PREFIX
+	128,								// SENSOR_EEP_CHn_PTM_mOFFS_TIA_0
+	128,								// SENSOR_EEP_CHn_PTM_mGAIN_TIA_1
+	3300,								// SENSOR_EEP_CHn_AMP_CAL_TARGET_mV_OFFS
+	2200,								// SENSOR_EEP_CHn_AMP_CAL_TARGET_mV_GAIN
+	5,									// SENSOR_EEP_CHn_VBIAS
+	30,									// SENSOR_EEP_CHn_STABLE_HOLD_TIME_SEC
+	52429,								// SENSOR_EEP_CHn_mZERO_L
+	16396,								// SENSOR_EEP_CHn_mZERO_H
+	0,									// SENSOR_EEP_CHn_mZERO_TEMP_L
+	16932,								// SENSOR_EEP_CHn_mZERO_TEMP_H
+	13107,								// SENSOR_EEP_CHn_mSPAN_L
+	16371,								// SENSOR_EEP_CHn_mSPAN_H
+	0,									// SENSOR_EEP_CHn_mSPAN_TEMP_L
+	16932,								// SENSOR_EEP_CHn_mSPAN_TEMP_H
+	50,									// SENSOR_EEP_CHn_SPAN_GAS
+	52429,								// SENSOR_EEP_CHn_bZERO_L
+	16396,								// SENSOR_EEP_CHn_bZERO_H
+	0,									// SENSOR_EEP_CHn_bZERO_TEMP_L
+	16932,								// SENSOR_EEP_CHn_bZERO_TEMP_H
+	13107,								// SENSOR_EEP_CHn_bSPAN_L
+	16371,								// SENSOR_EEP_CHn_bSPAN_H
+	0,									// SENSOR_EEP_CHn_bSPAN_TEMP_L
+	16932,								// SENSOR_EEP_CHn_bSPAN_TEMP_H
+	0,									// SENSOR_EEP_CHn_RES_25
+	0,									// SENSOR_EEP_CHn_GAS_NAME_0
+	0,									// SENSOR_EEP_CHn_GAS_NAME_1
+	0,									// SENSOR_EEP_CHn_GAS_NAME_2
+	0,									// SENSOR_EEP_CHn_GAS_NAME_3
+	0,									// SENSOR_EEP_CHn_GAS_NAME_4
+	0,									// SENSOR_EEP_CHn_GAS_NAME_5
+	0,									// SENSOR_EEP_CHn_RES_32
+	true,								// SENSOR_EEP_CHn_bZERO_USE
+	30,									// SENSOR_EEP_CHn_bZERO_PERCENTAGE_x10
+	180,								// SENSOR_EEP_CHn_bZERO_SEC
+	0,									// SENSOR_EEP_CHn_bZERO_COUNT
+	MEASURING_METHOD_IR,				// SENSOR_EEP_CHn_METHOD
+	0,									// SENSOR_EEP_CHn_SEN_NO
+	0,									// SENSOR_EEP_CHn_GAS_NO
+	0,									// SENSOR_EEP_CHn_DP
+	100,								// SENSOR_EEP_CHn_HIGH_SCALE
+	MEASURING_UNIT_VOL,					// SENSOR_EEP_CHn_UNIT
+	0,									// SENSOR_EEP_CHn_MAINTENANCE_GAS
+	100,								// SENSOR_EEP_CHn_CROSS_SENS_SCALE_x100
+	30,									// SENSOR_EEP_CHn_ZERO_SKIP_PERCENTAGE_x10
+	30,									// SENSOR_EEP_CHn_SPAN_SKIP_PERCENTAGE_x10
+	50,									// SENSOR_EEP_CHn_OUT_DELAY_PERCENTAGE_x10
+	5,									// SENSOR_EEP_CHn_OUT_DELAY_SEC
+	false,								// SENSOR_EEP_CHn_ALARM_UNDER_CHECK
+	false,								// SENSOR_EEP_CHn_ALARM_1ST_LATCH
+	true,								// SENSOR_EEP_CHn_ALARM_1ST_INCREASE_TYPE
+	20,									// SENSOR_EEP_CHn_ALARM_1ST_LEVEL
+	0,									// SENSOR_EEP_CHn_ALARM_1ST_DEAD_BAND
+	0,									// SENSOR_EEP_CHn_ALARM_1ST_DELAY_SEC
+	false,								// SENSOR_EEP_CHn_ALARM_2ND_LATCH
+	true,								// SENSOR_EEP_CHn_ALARM_2ND_INCREASE_TYPE
+	40,									// SENSOR_EEP_CHn_ALARM_2ND_LEVEL
+	0,									// SENSOR_EEP_CHn_ALARM_2ND_DEAD_BAND
+	0,									// SENSOR_EEP_CHn_ALARM_2ND_DELAY_SEC
+	0,									// SENSOR_EEP_CHn_RES_60
+	0,									// SENSOR_EEP_CHn_RES_61
+	0,									// SENSOR_EEP_CHn_RES_62
+	0,									// SENSOR_EEP_CHn_RES_63
+	0									// SENSOR_EEP_CHn_RES_64
+};
+/* End Variable */
+		
+
+	
+	
+
+

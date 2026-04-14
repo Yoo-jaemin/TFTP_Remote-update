@@ -1,0 +1,30 @@
+#ifndef __STM32F4xx_IT_H
+#define __STM32F4xx_IT_H
+
+/* Start Include */
+/* End Include */
+
+/* Start Define */
+/* End Define */
+
+/* Start Enum*/
+/* End Enum*/
+
+/* Start Struct*/
+/* End Struct*/
+
+/* Start Function */
+void NMI_Handler(void);
+void HardFault_Handler(void);
+void MemManage_Handler(void);
+void BusFault_Handler(void);
+void UsageFault_Handler(void);
+void SVC_Handler(void);
+void DebugMon_Handler(void);
+void PendSV_Handler(void);
+/* End Function */
+
+/* Start Variable */
+/* End Variable */
+
+#endif 

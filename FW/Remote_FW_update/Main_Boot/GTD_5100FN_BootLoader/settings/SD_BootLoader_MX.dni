@@ -1,0 +1,59 @@
+[Stack]
+FillEnabled=0
+OverflowWarningsEnabled=1
+WarningThreshold=90
+SpWarningsEnabled=1
+WarnLogOnly=1
+UseTrigger=1
+TriggerName=main
+LimitSize=0
+ByteLimit=50
+[StLinkDriver]
+CStepIntDis=_ 0
+stlinkserialNo=EC2D87B8
+stlinkfoundProbes=
+[DebugChecksum]
+Checksum=-860609880
+[Exceptions]
+StopOnUncaught=_ 0
+StopOnThrow=_ 0
+[CallStack]
+ShowArgs=0
+[Disassembly]
+MixedMode=0
+[struct_types]
+Fmt0=CRC_HandleType-uwCRCValue	4	0
+Fmt1=Packet_HandleType-dwCalCRC	4	0
+Fmt2=Send_HandleType-dwStartAdd	4	0
+Fmt3=UploadCount_Handle-ucErase	3	0
+Fmt4=Upload_HandleType-dwCalCRC	4	0
+Fmt5=Upload_HandleType-dwReadCRC	4	0
+Fmt6=Upload_HandleType-dwRead_add	4	0
+[array_types]
+Fmt0=U32[2048]	4	0
+Fmt1=U32[256]	4	0
+Fmt2=U32[2]	4	0
+Fmt3=U8[1024]	4	0
+Fmt4=U8[1280]	4	0
+Fmt5=char[1024]	4	0
+[watch_formats]
+Fmt0={W}42:ucDisplay_Progress	3	0
+[Log file]
+LoggingEnabled=_ 0
+LogFile=_ ""
+Category=_ 0
+[TermIOLog]
+LoggingEnabled=_ 0
+LogFile=_ ""
+[CallStackLog]
+Enabled=0
+[CallStackStripe]
+ShowTiming=1
+[Disassemble mode]
+mode=0
+[Breakpoints2]
+Count=0
+[Aliases]
+A0=_ "D:\work\project\GasDetector\GTD-5100F\FW\Boot Loader\GTD_5100FN_BootLoader\App\IO_Ctrl\IO_Ctrl.c" ""
+Count=1
+SuppressDialog=0
