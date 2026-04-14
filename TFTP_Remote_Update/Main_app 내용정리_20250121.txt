@@ -1,0 +1,57 @@
+[- Main App Project -]
+
+* 추가파일 list *
+Application\interface\Industrial_standard\poe
+tftp.c
+tftp_client.h
+tftp_example.c
+tftp_example.h
+tftp_opts.h
+tftp_common.h
+
+..\\storage\nand
+nand_flash.c
+nand_flash.h
+
+
+
+// ***************************************************************************************************
+[tftp_example.c]
+
+void FW_Update_task() 
+
+펌웨어 업데이트 커맨드 체크하면서 루프를 실행 
+
+nand 에 쓰기 완료하면 해당 부트로 점프 -> static void boot_jump_select(void)
+
+
+// ***************************************************************************************************
+[ modbus_map.c]
+
+static void MODBUS_Map_Remote_Update_Check( void )
+
+: 펌에어 업데이트 명령 함수 -> 테스트 툴이 Write_Multiple_Coils 지원하지 않아서 Write_Single_Register_Slave 로 임시 테스트
+
+// ***************************************************************************************************
+
+[tftp_example.c]
+
+void
+tftp_example_init_client(void)
+
+: TFTP Client initialize 함수
+
+tftp_get(f, &srv, TFTP_PORT, LWIP_TFTP_EXAMPLE_CLIENT_FILENAME, TFTP_MODE_OCTET);
+
+: read 요청 (파일명, 포트, 모드 설정)
+
+// ***************************************************************************************************
+
+[tftp.c]
+
+static void
+recv(void *arg, struct udp_pcb *upcb, struct pbuf *p, const ip_addr_t *addr, u16_t port)
+
+: TFTP 로 펌웨어 파일 읽어서 Nandflash 에 Write 하는 함수
+
+// ***************************************************************************************************
